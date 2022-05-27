@@ -1,0 +1,22 @@
+.container {
+  background-color: #fff;
+  height: 85%;
+}
+
+.sidenav{
+  background-color: #6875b7;
+  width: 13%;
+}
+
+.sidenav a {
+  color: #fff;
+}
+
+.sidenav i {
+  padding-right: .6rem;
+}
+
+.content {
+  padding: 15px;
+  background-color: #fff;
+}

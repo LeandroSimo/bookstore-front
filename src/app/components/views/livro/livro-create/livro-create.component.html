@@ -1,0 +1,24 @@
+<section class="mat-elevation-z5">
+    <mat-card>
+        <mat-card-title>Novo Livro</mat-card-title>
+        <form>
+            <mat-form-field>
+                <input [formControl]="title" required [(ngModel)]="book.title" matInput type="text" name="title"
+                    placeholder="Título" maxlength="100">
+                <mat-error *ngIf="title.invalid">{{ showMessageTitle() }}</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <input [formControl]="author_name" required [(ngModel)]="book.author_name" matInput type="text"
+                    name="author_name" placeholder="Nome do Autor" maxlength="100">
+                <mat-error *ngIf="author_name.invalid">{{ showMessageAuthor() }}</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <textarea [formControl]="text" required [(ngModel)]="book.text" matInput type="text" name="text"
+                    placeholder="Texto" maxlength="1000000"></textarea>
+                <mat-error *ngIf="text.invalid">{{ showMessageText() }}</mat-error>
+            </mat-form-field>
+        </form>
+        <button mat-button mat-raised-button (click)="create()" class="mat-elevation-z4 buttonSave">Salvar</button>
+        <button mat-button mat-raised-button (click)="cancel()" class="mat-elevation-z4 buttonCancel">Cancelar</button>
+    </mat-card>
+</section>

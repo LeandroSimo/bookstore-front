@@ -1,0 +1,16 @@
+<section class="mat-elevation-z5">
+    <mat-card>
+        <mat-card-title>Excluir Categoria</mat-card-title>
+        <form>
+            <mat-form-field>
+                <input [(ngModel)]="category.name" matInput type="text" name="nome" placeholder="Nome" disabled="">
+            </mat-form-field>
+            <mat-form-field>
+                <textarea [(ngModel)]="category.description" matInput type="text" name="descricao"
+                    placeholder="Descrição" disabled></textarea>
+            </mat-form-field>
+        </form>
+        <button mat-button mat-raised-button (click)="deleteCategory()" class="mat-elevation-z4 buttonDelete">Excluir</button>
+        <button mat-button mat-raised-button (click)="cancel()" class="mat-elevation-z4 buttonCancel">Cancelar</button>
+    </mat-card>
+</section>

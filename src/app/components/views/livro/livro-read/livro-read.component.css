@@ -1,0 +1,16 @@
+form {
+  width: 90%;
+  margin: auto;
+}
+.cardBook {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.cardText {
+    text-align: justify;
+text-indent: 2rem;
+}
+button {
+  width: 100%;
+}

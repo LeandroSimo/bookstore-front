@@ -1,0 +1,21 @@
+<section class="mat-elevation-z5">
+    <mat-card>
+        <mat-card-title>Excluir Livro</mat-card-title>
+        <form>
+            <mat-form-field>
+                <input [(ngModel)]="book.title" matInput type="text" name="title" placeholder="Título" maxlength="100"
+                    disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input [(ngModel)]="book.author_name" matInput type="text" name="author_name"
+                    placeholder="Nome do Autor" maxlength="100" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <textarea [(ngModel)]="book.text" matInput type="text" name="text" placeholder="Texto" maxlength="2000"
+                    disabled></textarea>
+            </mat-form-field>
+        </form>
+        <button mat-button mat-raised-button (click)="delete()" class="mat-elevation-z4 buttonDelete">Excluir</button>
+        <button mat-button mat-raised-button (click)="cancel()" class="mat-elevation-z4 buttonCancel">Cancelar</button>
+    </mat-card>
+</section>
